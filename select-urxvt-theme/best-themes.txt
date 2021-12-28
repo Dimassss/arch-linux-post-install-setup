@@ -1,0 +1,17 @@
+base16-chalk-256
+base16-codeschool-256
+base16-eighties-256
+base16-flat-256
+base16-hopscotch-256
+base16-materia-256
+base16-pico-256
+base16-pop-256
+base16-railscasts-256
+base16-solarflare-256
+iterm-LiquidCarbonTransparentInverse
+iterm-Misterioso
+iterm-Tomorrow_Night_Eighties
+iterm-WarmNeon
+nord
+xcolors-cool-beans
+xcolors-tangoesque
