@@ -29,8 +29,15 @@ sudo pacman -S xorg xorg-init ttf-dejavu nvidia nvidia-utils xf86-video-intel me
 
 #i3 install
 sudo pacman -S i3 i3-gaps i3status i3blocks dmenu xterm
+sudo pacman -S feh
 sh $utils/i3/install.sh
 
+sh ./select-wallpaper/default.sh
+
+
+
+
+#moving all stuff to the ~/home/utils directory
 cur_dir=$PWD
 
 if ! [ $PWD == "$HOME/home/utils"  ]
