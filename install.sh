@@ -32,18 +32,31 @@ utils=$h/home/utils
 cp -r ./* $utils/
 
 #basic programs install
+echo sudo pacman -S
 #sudo pacman -Sy xorg xorg-xinit xorg-setxkbmap ttf-dejavu 
+echo .	xorg xorg-xinit xorg-setxkbmap ttf-dejavu
 #sudo pacman -Sy nvidia nvidia-utils xf86-video-intel mesa 
+echo .	nvidia nvidia-utils xf86-video-intel mesa 
 #sudo pacman -Sy alsa-utils rxvt-unicode chromium base-devel
+echo .	alsa-utils rxvt-unicode chromium base-devel
 #sudo pacman -Sy chromium git python3 r rar gzip telegram-desktop
+echo .	chromium git python3 r rar gzip telegram-desktop
 #sudo pacman -Sy xclip zathura zathura-pdf-poppler feh
+echo .	xclip zathura zathura-pdf-poppler feh
 
 #i3 install
 #sudo pacman -Sy i3 i3-gaps i3status i3blocks dmenu xterm
 
-startx &
+exit 0
 
-sh $utils/install.config.sh
+#sh $utils/install.config.sh
+echo Install all the configs by you need
+echo Order:
+echo .......select-xresources
+echo .......select-urxvt-theme
+echo .......select-keyboard
+echo .......select-wallpaper
+echo .......i3
 
 
 #removing this dir if not /home/utils
@@ -53,7 +66,7 @@ if ! [ $PWD == "$h/home/utils"  ]
 then
 	echo removing $cur_dir 
 	cd ..
-	#rm -rf $cur_dir
+	rm -rf $cur_dir
 fi
 
 
