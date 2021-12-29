@@ -1,6 +1,6 @@
 #!/bin/bash
 
-h=${HOME::-1}
+h=$(cat home.variable)
 c=$h/home/utils/select-xresources
 
 echo "#include \"$c/../my_config/.Xresources\"" > $c/Xresources

@@ -1,6 +1,8 @@
 #!/bin/sh
 
-h=${HOME::-1}
+sh set-home-dir.sh
+
+h=$(cat home.variable)
 
 if ! [[ -d $h/home ]]
 then

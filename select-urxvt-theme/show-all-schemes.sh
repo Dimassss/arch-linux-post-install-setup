@@ -1,6 +1,6 @@
 #!/bin/sh
 
-h=${HOME::-1}
+h=$(cat home.variable)
 c=$h/home/utils/select-urxvt-theme
 
 for theme in $(ls $c/themes)

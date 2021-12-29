@@ -1,6 +1,6 @@
 #!/bin/sh
 
-h=${HOME::-1}
+h=$(cat home.variable)
 c=$h/home/utils/select-wallpaper
 
 feh --bg-scale $c/wallpapers/y-tt-.jpg 

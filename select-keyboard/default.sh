@@ -1,6 +1,6 @@
 #!/bin/sh
 
-h=${HOME::-1}
+h=$(cat home.variable)
 c=$h/home/utils/select-keyboard
 
 sudo cp $c/res/00-keyboard.conf /etc/X11/xorg.conf.d/
