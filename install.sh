@@ -46,8 +46,9 @@ echo .	xclip zathura zathura-pdf-poppler feh
 
 #i3 install
 #sudo pacman -Sy i3 i3-gaps i3status i3blocks dmenu xterm
-
-exit 0
+echo .	i3 i3-gaps i3status i3blocks dmenu xterm
+echo \n
+echo \n
 
 #sh $utils/install.config.sh
 echo Install all the configs by you need
@@ -57,7 +58,7 @@ echo .......select-urxvt-theme
 echo .......select-keyboard
 echo .......select-wallpaper
 echo .......i3
-
+echo \n\n
 
 #removing this dir if not /home/utils
 cur_dir=$PWD
