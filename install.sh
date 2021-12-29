@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sh set-home-dir.sh
+sh set-home-dir-option.sh
 
 h=$(cat home.variable)
 
@@ -32,14 +32,16 @@ utils=$h/home/utils
 cp -r ./* $utils/
 
 #basic programs install
-sudo pacman -S xorg xorg-xinit xorg-setxkbmap ttf-dejavu 
-sudo pacman -S nvidia nvidia-utils xf86-video-intel mesa 
-sudo pacman -S alsa-utils rxvt-unicode chromium base-devel
-sudo pacman -S chromium feh git python3 r rar gzip telegram-desktop
-sudo pacman -S xclip zathura zathura-pdf-poppler
+#sudo pacman -Sy xorg xorg-xinit xorg-setxkbmap ttf-dejavu 
+#sudo pacman -Sy nvidia nvidia-utils xf86-video-intel mesa 
+#sudo pacman -Sy alsa-utils rxvt-unicode chromium base-devel
+#sudo pacman -Sy chromium git python3 r rar gzip telegram-desktop
+#sudo pacman -Sy xclip zathura zathura-pdf-poppler feh
 
 #i3 install
-sudo pacman -S i3 i3-gaps i3status i3blocks dmenu xterm
+#sudo pacman -Sy i3 i3-gaps i3status i3blocks dmenu xterm
+
+startx &
 
 sh $utils/install.config.sh
 
@@ -49,9 +51,9 @@ cur_dir=$PWD
 
 if ! [ $PWD == "$h/home/utils"  ]
 then
-	echo $cur_dir != $h/home/utils
+	echo removing $cur_dir 
 	cd ..
-	rm -rf $cur_dir
+	#rm -rf $cur_dir
 fi
 
 

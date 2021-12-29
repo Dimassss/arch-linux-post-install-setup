@@ -1,16 +1,16 @@
 #~/bin/sh
 
-h=${HOME}
+h=$(cat home.variable)
 c=$h/home/utils/i3
 
-#cp ./res/xinitrc $HOME/.xinitrc
+#cp $c/res/xinitrc $h/.xinitrc
 
-if ! [ -d $h/.config ]
+if ! [[ -d $h/.config ]]
 then
 	mkdir $h/.config
 fi
 
-if ! [ -d $h/.config/i3 ]
+if ! [[ -d $h/.config/i3 ]]
 then
 	mkdir $h/.config/i3
 fi
